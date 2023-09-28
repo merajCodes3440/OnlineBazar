@@ -38,6 +38,7 @@ let flag = true;
         for (var i = 0; i < user.length; i++) {
             if (user[i].email === emailid) {
               alert('Email already in use.');
+              window.location.href="../loginpage/index.html";
               return;
             }
     }
@@ -56,6 +57,7 @@ let flag = true;
      localStorage.setItem("user", JSON.stringify(user));
     console.log(user);
     alert("signup successful");
+    window.location.href="../loginpage/index.html";
 }
 
 }

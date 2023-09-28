@@ -64,11 +64,17 @@ li a:hover{
 /* -----------page body style part---------------- */
 
 .bg-img{
-   height:80vh;
-   width:100vw;
+   height:500px;
+   width:1000px;
+   padding-left: 300px;
+
 }
 .bg-img img{
-    background-image: fit;
+    /* background-image: fit; */
+    height:470px;
+    object-fit: fit;
+    padding-left:300px;
+    
 }
 
 
@@ -116,7 +122,7 @@ li a:hover{
     margin:10px; 
 }
 
-/* --------shop-page-------------------- */
+/* --------shop-page--------------------
 .shopbody{
     display:flex;
 
@@ -126,11 +132,15 @@ li a:hover{
     height:150vh;
     border: 5px solid red;
     /* background-color: black;
-    color:white; */
+    color:white; 
     
 }
 .shop-right-sec{
     margin:10px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
    
 }
 
@@ -140,6 +150,7 @@ li a:hover{
     width:80%;
     height:50px;
     display:flex;
+    flex-wrap: wrap;
 
 }
 input.search{
@@ -158,5 +169,39 @@ input.search{
 
 }
 .shop-left-sec label {
-   /* color:white; */
+   /* color:white; 
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    border:2px solid brown;
+
+}
+.card{
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+    border:2px solid red;
+}
+.card p{
+    text-align:center;
+    font-weight: 500;
+}
+.card img{
+    display:flex;
+    flex-wrap:wrap;
+    background-position:center;
+    background-size: cover;
+}
+.rating{
+    display:inline;
+} */
+
+/* css for add to cart items count */
+
+.cartqunt{
+    background-color: red;
+    width:20;
+    height: 20px;
+    border-radius: 5px;
 }

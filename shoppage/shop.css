@@ -1,0 +1,136 @@
+.shopbody{
+  padding:10px;
+  display: flex;
+  gap:20px;
+  background-color: rgb(32, 32, 32);
+  color: whitesmoke;
+}
+/* ------left-section---- */
+.shop-left-sec{
+  width:20%;
+  /* border:2px solid red; */
+  height:100%;
+  padding:10px;
+  position:sticky;
+  top:60px;
+  scroll-behavior: auto;
+  overflow-y:scroll;
+}
+.shop-left-sec h3{
+  text-align: center;
+  margin:5px;
+}
+.checkbox-container{
+  border-top:.5px solid whitesmoke;
+
+}
+.check{
+  padding:10px;
+}
+
+/* ------right-section---- */
+.shop-right-sec{
+  width:100%;
+  /* border: 2px solid green; */
+}
+.filter-sec{
+  padding:20px;
+  max-width: 100%;
+  /* border:2px solid red; */
+  position: sticky;
+  top:60px;
+  background-color:rgb(32, 32, 32);
+ 
+}
+.search{
+  display: flex;
+  justify-content: space-around;
+}
+input:focus{
+  outline:none;
+}
+#search{
+  border-radius: 5px;
+  border:.5px solid salmon;
+  margin: auto;
+  width:900px;
+  height:60px;
+  padding:0 15px;
+  font-size: 20px;
+  background-color:rgb(32, 32, 32) ;
+  color:white;
+}
+.filter-btn-sec{
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.filterbtn{
+  height: 40px;
+  width:150px;
+ background-color:rgb(233,30,99);
+ border:none;
+ color:white;
+ border-radius:5px;
+}
+/* ------card design---- */
+
+.price{
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+  
+}
+.rating{
+  border-top:1px solid whitesmoke;
+  padding:5px;
+
+}
+.container1{
+ display:flex;
+ justify-content: center;
+ flex-wrap:wrap;
+ gap:15px;
+ padding:15px;
+ 
+}
+h2 , p{
+ text-align:center;
+}
+.desc{
+  padding:10px 5px;
+}
+.cont{
+ width:300px;
+ border: .5px solid gray;
+ padding:10px;
+ border-radius:5px;
+}
+.cont img{
+ padding-bottom:10px;
+ width:100%;
+ height:210px;
+ border-radius:10px;
+
+}
+.btn-rating{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.addtocart{
+  padding:10px;
+ background-color:#008CBA;
+ border:none;
+ color:white;
+ border-radius:5px;
+}
+.buynow{
+  padding:10px;
+ background-color:rgb(233,30,99);
+ border:none;
+ color:white;
+ border-radius:5px;
+}
+
+

@@ -1,91 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OnlineBazar-shop-spage</title>
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="shop.css">
+  
+  </head>
+  <body>
     <nav class="container">
+      <div class="logo">
+        <p>OnlineBazar.com</p>
+      </div>
 
-        <div class="logo">
-          <p>OnlineBazar.com</p>
+      <div class="right-section">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#" >My Cart <span class="cartqunt">0</span></a></li>
+          <li><a href="#">Profile</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  
+    <!-- <div class="cart">
+       <h1>your selected items are here</h1>z
+       
+    </div> -->
+
+ <!-----------------shopbody-------------------->
+
+    <div class="shopbody">
+
+   <!-----------------left section-------------------->   
+      <section class="shop-left-sec">
+        <h3>Color</h3>
+        <div class="checkbox-container">
+          <div class="check">
+            <input type="checkbox" id="s" />
+            <label for="s">RED</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="s" />
+            <label for="s">GREEN</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="s" />
+            <label for="s">BLACK</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="s" />
+            <label for="s">WHITE</label>
+          </div>
         </div>
+
+        <h3>Size</h3>
+        <div class="checkbox-container">
+          <div class="check">
+            <input type="checkbox" id="s" />
+            <label for="s">S</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="s" />
+            <label for="s">M</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="s" />
+            <label for="s">L</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="s" />
+            <label for="s">XL</label>
+          </div>
+        </div>
+        <div class="slider-container">
+          <h3>Rating</h3>
+          <span class="number" id="num1">0</span>
+          <input
+          type="range"
+          value="0"
+          min="0"
+          max="10"
+          id="slider"
+          />
+          <!-- <span class="number" id="num2"></span> -->
+        </div>
+        <h3>FILTER BY PRICES</h3>
+        <div class="checkbox-container">
+          <div class="check">
+            <input type="checkbox" id="s" />
+            <label for="s">0-10$</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="s" />
+            <label for="s">10$-25$</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="s" />
+            <label for="s">25$-50$</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="s" />
+            <label for="s">50$-100$</label>
+          </div>
+        </div>
+
+      </section>
     
-        <div class="right-section">
-          <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="#">My Cart</a></li>
-            <li><a href="#">Profile</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="shopbody">
-        <div class="shop-left-sec">
-          <h3>Size</h3>
-          <div class="checkbox-container">
-            <div>
-              <input type="checkbox" id="s">
-              <label for="s">S</label>
-            </div>
-            <div>
-              <input type="checkbox" id="s">
-              <label for="s">M</label>
-            </div>
-            <div>
-              <input type="checkbox" id="s">
-              <label for="s">L</label>
-            </div>
-            <div>
-              <input type="checkbox" id="s">
-              <label for="s">XL</label>
-            </div>
+      <!-------------------product display section---------->
+      <section  class="shop-right-sec">
+          
+        <div class="filter-sec">
+          <div class="search">
+            <input type="text" id="search" placeholder="search" />
           </div>
-          <div class="slider-container">
-              <div>
-                Rating
-              </div>
-             <input type="range" min="0" max="5" value="0" id="slider" list="markers">
-             <datalist id="markers">
-              <option value="0" label="1"></option>
-              <option value="1" ></option>
-              <option value="2" ></option>
-              <option value="3" ></option>
-              <option value="4" ></option>
-              <option value="5" label="5"></option>
-            </datalist>
-          </div>
-           <h3>FILTER BY PRICES</h3>
-          <div class="checkbox-container">
-            <div>
-              <input type="checkbox" id="s">
-              <label for="s">0-10$</label>
-            </div>
-            <div>
-              <input type="checkbox" id="s">
-              <label for="s">10$-25$</label>
-            </div>
-            <div>
-              <input type="checkbox" id="s">
-              <label for="s">25$-50$</label>
-            </div>
-            <div>
-              <input type="checkbox" id="s">
-              <label for="s">50$-100$</label>
-            </div>
-          </div>
-        </div>
-      <div class="shop-right-sec">
-        <input type="text" class="search" placeholder="search">
-        <div class="filter-btn-sec">
+         
+          <div class="filter-btn-sec">
             <button class="filterbtn" id="btnall">All</button>
             <button class="filterbtn" id="btnmens">Mens</button>
             <button class="filterbtn" id="btnwomens">Womens</button>
             <button class="filterbtn" id="btnjewellery">jewellerys</button>
             <button class="filterbtn" id="btnelectronics">Electronics</button>
+          </div>
+          </div>
+          <div class="cards">
+            <!-- <div class="card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS33OQ6-elg8aJvSr9DSr_cPpSpYFR6CuWRBQ&usqp=CAU"
+                alt="product img"
+              />
+              <p>price: 30$</p>
+              <p>Rating: 3.8 count: 300</p>
+            </div> -->
+            
+            </div>
+            <div class="container1">
+  
+            </div>
+
+      </section>
+  
       </div>
-      </div>
-    </div>
-</body>
+    <script src="shop.js"></script>
+  </body>
 </html>
