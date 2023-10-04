@@ -1,147 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OnlineBazar-shop-spage</title>
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="shop.css">
-  
-  </head>
-  <body>
-    <nav class="container">
-      <div class="logo">
-        <p>OnlineBazar.com</p>
-      </div>
 
-      <div class="right-section">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="#" >My Cart <span class="cartqunt">0</span></a></li>
-          <li><a href="#">Profile</a></li>
-        </ul>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OnlineBazar-shop-spage</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="shop.css">
 
-  
-    <!-- <div class="cart">
+</head>
+
+<body>
+  <nav class="container">
+    <div class="logo">
+      <p>OnlineBazar.com</p>
+    </div>
+
+    <div class="right-section">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li class="cart-nav"><a href="../cart/cart.html">My Cart <span class="cartqunt"></span></a></li>
+        <li><a href="#">Profile</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- <div class="cart">
        <h1>your selected items are here</h1>z
        
     </div> -->
 
- <!-----------------shopbody-------------------->
+  <!-----------------shopbody-------------------->
 
-    <div class="shopbody">
+  <div class="shopbody">
 
-   <!-----------------left section-------------------->   
-      <section class="shop-left-sec">
-        <h3>Color</h3>
-        <div class="checkbox-container">
-          <div class="check">
-            <input type="checkbox" id="s" />
-            <label for="s">RED</label>
-          </div>
-          <div class="check">
-            <input type="checkbox" id="s" />
-            <label for="s">GREEN</label>
-          </div>
-          <div class="check">
-            <input type="checkbox" id="s" />
-            <label for="s">BLACK</label>
-          </div>
-          <div class="check">
-            <input type="checkbox" id="s" />
-            <label for="s">WHITE</label>
-          </div>
+    <!-----------------left section-------------------->
+    <section class="shop-left-sec">
+      <h3>Color</h3>
+      <div class="checkbox-container">
+        <div class="check">
+          <input type="checkbox" class="s" />
+          <label for="s">RED</label>
         </div>
-
-        <h3>Size</h3>
-        <div class="checkbox-container">
-          <div class="check">
-            <input type="checkbox" id="s" />
-            <label for="s">S</label>
-          </div>
-          <div class="check">
-            <input type="checkbox" id="s" />
-            <label for="s">M</label>
-          </div>
-          <div class="check">
-            <input type="checkbox" id="s" />
-            <label for="s">L</label>
-          </div>
-          <div class="check">
-            <input type="checkbox" id="s" />
-            <label for="s">XL</label>
-          </div>
+        <div class="check">
+          <input type="checkbox" id="s1" />
+          <label for="s1">GREEN</label>
         </div>
-        <div class="slider-container">
-          <h3>Rating</h3>
-          <span class="number" id="num1">0</span>
-          <input
-          type="range"
-          value="0"
-          min="0"
-          max="10"
-          id="slider"
-          />
-          <!-- <span class="number" id="num2"></span> -->
+        <div class="check">
+          <input type="checkbox" id="s2" />
+          <label for="s2">BLACK</label>
         </div>
-        <h3>FILTER BY PRICES</h3>
-        <div class="checkbox-container">
-          <div class="check">
-            <input type="checkbox" id="s" />
-            <label for="s">0-10$</label>
-          </div>
-          <div class="check">
-            <input type="checkbox" id="s" />
-            <label for="s">10$-25$</label>
-          </div>
-          <div class="check">
-            <input type="checkbox" id="s" />
-            <label for="s">25$-50$</label>
-          </div>
-          <div class="check">
-            <input type="checkbox" id="s" />
-            <label for="s">50$-100$</label>
-          </div>
+        <div class="check">
+          <input type="checkbox" id="s3" />
+          <label for="s3">WHITE</label>
         </div>
-
-      </section>
-    
-      <!-------------------product display section---------->
-      <section  class="shop-right-sec">
-          
-        <div class="filter-sec">
-          <div class="search">
-            <input type="text" id="search" placeholder="search" />
-          </div>
-         
-          <div class="filter-btn-sec">
-            <button class="filterbtn" id="btnall">All</button>
-            <button class="filterbtn" id="btnmens">Mens</button>
-            <button class="filterbtn" id="btnwomens">Womens</button>
-            <button class="filterbtn" id="btnjewellery">jewellerys</button>
-            <button class="filterbtn" id="btnelectronics">Electronics</button>
-          </div>
-          </div>
-          <div class="cards">
-            <!-- <div class="card">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS33OQ6-elg8aJvSr9DSr_cPpSpYFR6CuWRBQ&usqp=CAU"
-                alt="product img"
-              />
-              <p>price: 30$</p>
-              <p>Rating: 3.8 count: 300</p>
-            </div> -->
-            
-            </div>
-            <div class="container1">
-  
-            </div>
-
-      </section>
-  
       </div>
-    <script src="shop.js"></script>
-  </body>
+
+      <h3>Size</h3>
+      <div class="checkbox-container">
+        <div class="check">
+          <input type="checkbox" id="s4" />
+          <label for="s4">S</label>
+        </div>
+        <div class="check">
+          <input type="checkbox" id="s5" />
+          <label for="s5">M</label>
+        </div>
+        <div class="check">
+          <input type="checkbox" id="s6" />
+          <label for="s6">L</label>
+        </div>
+        <div class="check">
+          <input type="checkbox" id="s7" />
+          <label for="s7">XL</label>
+        </div>
+      </div>
+
+      <div class="slider-container">
+        <h3>Rating</h3>
+        <span class="number" id="num1">0</span>
+        <input type="range" value="0" min="0" max="10" id="slider" />
+        <!-- <span class="number" id="num2"></span> -->
+      </div>
+      
+      <h3>FILTER BY PRICES</h3>
+      <div class="checkbox-container">
+        <div class="check">
+          <input type="checkbox" id="s8" />
+          <label for="s8">0-10$</label>
+        </div>
+        <div class="check">
+          <input type="checkbox" id="s9" />
+          <label for="s9">10$-25$</label>
+        </div>
+        <div class="check">
+          <input type="checkbox" id="s10" />
+          <label for="s10">25$-50$</label>
+        </div>
+        <div class="check">
+          <input type="checkbox" id="s11" />
+          <label for="s11">50$-100$</label>
+        </div>
+      </div>
+
+    </section>
+
+    <!-------------------product display section---------->
+    <section class="shop-right-sec">
+
+      <div class="filter-sec">
+        <div class="search">
+          <input type="text" id="searchid" placeholder="search" />
+        </div>
+
+        <div class="filter-btn-sec">
+          <button class="filterbtn" id="btnall">All</button>
+          <button class="filterbtn" id="btnlaptops">Laptops</button>
+          <button class="filterbtn" id="btnphones">Smartphones</button>
+          <button class="filterbtn" id="btnfrag">Fragrances</button>
+          <button class="filterbtn" id="btngroc">Groceries</button>
+          <!-- <button class="filterbtn" id="btnelectronics">Home decoretion</button> -->
+        </div>
+      </div>
+      <div class="shopCont">
+
+      </div>
+
+    </section>
+
+  </div>
+
+  <script src="shop.js"></script>
+</body>
+
 </html>

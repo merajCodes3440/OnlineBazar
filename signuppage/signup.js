@@ -57,7 +57,7 @@ let flag = true;
      localStorage.setItem("user", JSON.stringify(user));
     console.log(user);
     alert("signup successful");
-    window.location.href="../loginpage/index.html";
+    window.location.href="../shoppage/index.html";
 }
 
 }

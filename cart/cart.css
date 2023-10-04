@@ -1,0 +1,243 @@
+ /*------------------ nav bar css-------------- */
+
+ @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500&family=Arsenal:wght@400;700&family=Barlow+Condensed:wght@200;300;400&family=Merriweather:wght@300;400;700&family=Roboto:wght@300;400;500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+   
+    font-family: 'Roboto', sans-serif;
+    overflow-x:hidden;
+}
+.logo p{
+    padding:5px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.container{
+    background-color: black;
+    color:white;
+    height:60px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    position:sticky;
+    top:0;
+}
+ul{
+    display:flex;
+}
+ul li{
+    font-weight: 500;
+   font-size: 20px;
+   list-style: none;
+   /* padding:0 5px; */
+  
+}
+li a{
+   text-decoration: none;
+   color:white;
+   padding:16px 18px;
+}
+li a:hover{
+    background-color: grey;
+    color:black;
+}
+.body-section{
+    margin:5px;
+}
+.btn {
+    margin:10px;
+    width:100px;
+    height:50px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+
+}
+.btn:hover{
+    background-color: black;
+    color:white;
+   
+}
+.mainCont{
+
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    width:100%;
+    padding:20px 40px;
+   
+}
+       /* ---------------checkout--------------- */
+.checkCont{
+    padding: 10px;
+    position:fixed;
+    right:20px;
+    top:100px;
+    height:600px;
+    width:450px;
+    float: right;
+    background-color:rgb(32, 32, 32) ;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+h1{
+    text-align: center;
+    padding:10px;
+}
+.item-list{
+    padding:0 5px;
+    display:flex;
+    justify-content: space-between;
+    gap:10px;
+    align-items: center;
+    border: .5px solid gainsboro;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    
+}
+.imgdiv{
+    width:200px;
+    height:100px;
+   
+}
+.imgdiv img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.pricediv{
+    display: flex;
+    line-height: 2.5;
+    flex-direction: column;
+}
+.desc> h2{
+    padding:5px;
+    text-align:left;
+    background-color: rgb(238, 133, 48);
+    color:black;
+ }
+.desc> p{
+   padding:5px;
+   text-align:left;
+
+}
+.increment>h3{
+   text-align: center;   
+}
+i{
+    color:orangered;
+    font-size: 20px;
+}
+.item-price>h3{
+   text-align: center;
+   border-radius: 5px;
+   border:.5px solid #E91E63;
+   margin-bottom: 3px;
+}
+.tprice>h3{
+    background-color: #EFC07B;
+    border-radius: 5px;
+    text-align: center;
+    padding:1px;
+    font-size: 16px;
+    color:black;
+}
+#checkbtn{
+    background-color: #E91E63;
+    color:white;
+    width:200px;
+    height:40px;
+    border-radius: 5px;
+    border: none;
+
+}
+.totalprice{
+    margin: 5px;
+    display:flex;
+    justify-content: space-between;
+
+}
+.remove{
+    margin-bottom: 66px;
+}
+.checklist-items a{
+    text-decoration: none;
+    color:white;
+    text-align: center;
+    padding:20px 10px;
+   
+}
+.checklist-items>h2{
+    border: .5px solid crimson;
+    ;
+    padding: 5px;
+    border-radius: 5px;
+}
+.checklist-items> h2:hover{
+    background-color: #E91E63;
+    color:whitesmoke;
+}
+
+   /* ----------cart design----------------- */
+
+   .price{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+   
+ }
+ .rating{
+   border-top:1px solid whitesmoke;
+   padding:5px;
+ 
+ }
+ .items{
+    display: flex;
+    flex-wrap: wrap;
+ }
+ 
+.cont> h2 , p{
+  text-align:center;
+ }
+ .desc{
+   padding:10px 5px;
+ } 
+ .cont{
+  width:300px;
+  border: .5px solid gray;
+  padding:10px;
+  border-radius:5px;
+  margin:15px 0;
+ }
+ .cont img{
+  padding-bottom:10px;
+  width:100%;
+  height:210px;
+  border-radius:10px;
+ 
+ }
+ .btn-rating{
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ 
+ .remove{
+   padding:10px;
+  background-color:rgb(233,30,99);
+  border:none;
+  color:white;
+  border-radius:5px;
+  width:100%;
+ } 

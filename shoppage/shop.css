@@ -11,10 +11,10 @@
   /* border:2px solid red; */
   height:100%;
   padding:10px;
-  position:sticky;
+  position:fixed;
   top:60px;
-  scroll-behavior: auto;
   overflow-y:scroll;
+  
 }
 .shop-left-sec h3{
   text-align: center;
@@ -22,7 +22,7 @@
 }
 .checkbox-container{
   border-top:.5px solid whitesmoke;
-
+  margin-bottom:20px;
 }
 .check{
   padding:10px;
@@ -30,7 +30,9 @@
 
 /* ------right-section---- */
 .shop-right-sec{
-  width:100%;
+  width:75%;
+  margin-left: 24%;
+
   /* border: 2px solid green; */
 }
 .filter-sec{
@@ -49,7 +51,7 @@
 input:focus{
   outline:none;
 }
-#search{
+#searchid{
   border-radius: 5px;
   border:.5px solid salmon;
   margin: auto;
@@ -86,7 +88,7 @@ input:focus{
   padding:5px;
 
 }
-.container1{
+.shopCont{
  display:flex;
  justify-content: center;
  flex-wrap:wrap;
