@@ -1,11 +1,10 @@
-console.log("shop page...");
+
 // updating the cart count number ------------------
 updateCartCount();
 function updateCartCount(){
-  let cartNum = JSON.parse(localStorage.getItem("cart") || []);
-document.querySelector(".cartqunt").innerText = cartNum.length;
+  let cartNum = JSON.parse(localStorage.getItem("cart")) || [];
+  document.querySelector(".cartqunt").innerText = cartNum.length;
 }
-
 
 let itemdata= [];
 let myCartArray = [];
@@ -23,7 +22,7 @@ if (temp) {
 
 let data = async () => {
    try {
-    let responce = await fetch("https://dummyjson.com/products?limit=102");
+    let responce = await fetch("https://dummyjson.com/products?limit=52");
     let data = await responce.json();
     itemdata = data.products;
     console.log(itemdata);
@@ -71,6 +70,9 @@ console.log(phones);
   }
 
   // handling add to cart functionality -------
+
+// we need to add functionality by which we can avoid to 
+// add duplicate items 
   function addtoCart(idm) {
     
     let temp = itemdata.filter((item) => {
