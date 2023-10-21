@@ -28,13 +28,12 @@ body{
 }
 ul{
     display:flex;
+    align-items:center;
 }
 ul li{
     font-weight: 500;
    font-size: 20px;
-   list-style: none;
-   /* padding:0 5px; */
-  
+   list-style: none;  
 }
 li a{
    text-decoration: none;
@@ -44,6 +43,12 @@ li a{
 li a:hover{
     background-color: grey;
     color:black;
+}
+li img{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    border:.5px solid #E91E63;
 }
 .body-section{
     margin:5px;
@@ -71,6 +76,9 @@ li a:hover{
     gap:20px;
     width:100%;
     padding:20px 40px;
+    background-color:#202020 ;
+    color:antiquewhite;
+    min-height: 100vh;
    
 }
        /* ---------------checkout--------------- */
@@ -82,7 +90,7 @@ li a:hover{
     height:600px;
     width:450px;
     float: right;
-    background-color:rgb(32, 32, 32) ;
+    background-color:black ;
     color:white;
     display: flex;
     flex-direction: column;
@@ -180,7 +188,6 @@ i{
 }
 .checklist-items>h2{
     border: .5px solid crimson;
-    ;
     padding: 5px;
     border-radius: 5px;
 }
@@ -202,23 +209,22 @@ i{
    padding:5px;
  
  }
- .items{
-    display: flex;
-    flex-wrap: wrap;
- }
  
 .cont> h2 , p{
   text-align:center;
+  padding:5px;
  }
  .desc{
    padding:10px 5px;
  } 
  .cont{
   width:300px;
-  border: .5px solid gray;
+  border: .5px solid white;
   padding:10px;
   border-radius:5px;
-  margin:15px 0;
+  /* margin:10px 0; */
+  height:480px;
+
  }
  .cont img{
   padding-bottom:10px;

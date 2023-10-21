@@ -1,14 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500&family=Arsenal:wght@400;700&family=Barlow+Condensed:wght@200;300;400&family=Merriweather:wght@300;400;700&family=Roboto:wght@300;400;500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+   
+    font-family: 'Roboto', sans-serif;
+    overflow-x:hidden;
+}
+.logo p{
+    padding:5px;
+    font-size: 30px;
+    font-weight: 500;
+   
+}
+.container{
+    background-color:black;
+    color:rgb(233,30,99);
+    height:60px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    position:sticky;
+    top:0;
+}
+ul{
+    display:flex;
+    align-items: center;
+}
+ul li{
+    font-weight: 500;
+   font-size: 20px;
+   list-style: none;
+   /* padding:0 5px; */
+  
+}
+li a{
+   text-decoration: none;
+   color:white;
+   padding:16px 18px;
+   font-size: 18px;
+}
+li a:hover{
+    background-color: grey;
+    color:black;
+}
+li img{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    border:.5px solid #E91E63;
+}
+.body-section{
+    margin:10px;
+    font-size: 14px;
+}
+.btn {
+    margin:10px;
+    width:100px;
+    height:45px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: .5px solid gray;
+
+}
+.btn:hover{
+    background-color: black;
+    color:white;
+   
+}
+
 .shopbody{
   padding:10px;
   display: flex;
   gap:20px;
   background-color: rgb(32, 32, 32);
   color: whitesmoke;
+  min-height: 100vh;
+}
+
+.cartqunt{
+  background-color: #E91E63;
+  padding:3px;
+  border-radius: 2px;
 }
 /* ------left-section---- */
 .shop-left-sec{
   width:20%;
-  /* border:2px solid red; */
   height:100%;
   padding:10px;
   position:fixed;
@@ -32,17 +111,13 @@
 .shop-right-sec{
   width:75%;
   margin-left: 24%;
-
-  /* border: 2px solid green; */
 }
 .filter-sec{
   padding:20px;
   max-width: 100%;
-  /* border:2px solid red; */
   position: sticky;
   top:60px;
   background-color:rgb(32, 32, 32);
- 
 }
 .search{
   display: flex;
@@ -94,7 +169,6 @@ input:focus{
  flex-wrap:wrap;
  gap:15px;
  padding:15px;
- 
 }
 h2 , p{
  text-align:center;
@@ -113,7 +187,6 @@ h2 , p{
  width:100%;
  height:210px;
  border-radius:10px;
-
 }
 .btn-rating{
   display:flex;

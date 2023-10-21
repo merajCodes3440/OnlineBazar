@@ -13,7 +13,7 @@ function rendor(elem){
            <h4>Rating: ${elem.rating}⭐</h4>
          </div>
            <div class="desc">
-              <p>${elem.description}...</p>
+              <p>${elem.description.slice(0, 80)}...</p>
            </div>
            <div class="btn-rating">
            <button class="remove" onClick="remove(${elem.id})" >Remove</button>
@@ -33,6 +33,11 @@ console.log(getItems)
 
 
 let basket = JSON.parse(localStorage.getItem("basket")) || [];
+basket.map((x)=>{
+
+  console.log("basket ++"+x.id+ " "+ x.item)
+})
+
 
 //---------removing the items from cart(localstrage)-----------------
 //let basket =[];
@@ -61,7 +66,7 @@ function checklist(elem){
     </div>
     <div class="desc">
       <h2>${elem.title}</h2>
-      <p>${elem.description}...</p>
+      <p>${elem.description.slice(0, 50)}...</p>
     </div>
     <div class="increment">
        <div>
@@ -110,7 +115,7 @@ function up(id){
    else{
       search.item+=1;
    }
-   //localStorage.setItem("basket", JSON.stringify(basket));
+   localStorage.setItem("basket", JSON.stringify(basket));
    console.log(basket)
    update(id);
 
@@ -125,18 +130,18 @@ function up(id){
    else{
       search.item-=1;
     }
-    // basket = basket.filter((x)=>x.item>0)
-    // localStorage.setItem("basket", JSON.stringify(basket));
-    console.log(removeitem);
-   update(id);
+    basket = basket.filter((x)=>x.item>0)
+    localStorage.setItem("basket", JSON.stringify(basket));
+    //console.log(removeitem);
+    update(id);
   }
   // update the quantitty of items ------
   // we got id from the items whom quantity we want to decrise...
   let update =(id)=>{
     let search =basket.find((x)=>x.id===id);
-    document.getElementById(id).innerText = search.item;
-    itemsump(id);
-
+    document.getElementById(id).innerText = search.item || "";
+    localStorage.setItem("basket", JSON.stringify(basket));
+    itemsump(id);   
   }
 // item total price ----------------------
 let itemsump =(id)=>{
@@ -149,24 +154,31 @@ let itemsump =(id)=>{
    totalPriceElement.innerHTML =totalItemPrice;
   }
 // checkout price of items -------------------
-// function totalprice(id){
-//   JSON.parse(localStorage.getItem("basket"));
-//     if(basketdata.length!==0){
-//       let amount  = basketdata.map((x)=>{
-//         let {item,id} =x;
-//         let search =getItems.find((y)=>y.id===id);
-//         return item* search.price;
-//       }).reduce((x,y)=>x+y);
-//       let tpr = document.querySelector("#tpr")
-//       tpr.innerHTML =(amount-5)+" $";
-//     } 
-//     else{
-//       console.log("return..")
-//       return;
-//     }
-//   }
-//totalprice();
 
+
+function totalprice(){
+  let basketdata =  JSON.parse(localStorage.getItem("basket"));
+  console.log("basket data"+ basketdata);
+
+    if(basketdata.length!==0){
+      let amount  = basketdata.map((x)=>{
+        let {item,id} =x;
+        let search =getItems.find((y)=>y.id===id);
+        return item* search.price;
+      }).reduce((x,y)=>x+y);
+      let tpr = document.querySelector("#tpr");
+      tpr.innerHTML =(amount-5)+" $";
+      console.log(amount);
+    } 
+    else{
+      console.log("no items for checkout...")
+      return;
+    }
+  }
+totalprice();
+
+// let tpr = document.querySelector("#tpr");
+//         console.log(tpr);
 
 // // check out prince-----------
 

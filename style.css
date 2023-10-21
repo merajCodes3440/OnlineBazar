@@ -12,11 +12,12 @@ body{
 .logo p{
     padding:5px;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 500;
+   
 }
 .container{
-    background-color: black;
-    color:white;
+    background-color:black;
+    color:rgb(233,30,99);
     height:60px;
     display:flex;
     justify-content:space-between;
@@ -26,6 +27,7 @@ body{
 }
 ul{
     display:flex;
+    align-items: center;
 }
 ul li{
     font-weight: 500;
@@ -38,21 +40,29 @@ li a{
    text-decoration: none;
    color:white;
    padding:16px 18px;
+   font-size: 18px;
 }
 li a:hover{
     background-color: grey;
     color:black;
 }
-.body-section{
-    margin:5px;
+li img{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    border:.5px solid #E91E63;
+}
+.body-section h1{
+    margin:20px;
+    font-size: 24px;
 }
 .btn {
-    margin:10px;
+    margin:10px 20px;
     width:100px;
-    height:50px;
+    height:45px;
     font-size: 20px;
-    font-weight: 600;
-    border-radius: 10px;
+    border-radius: 5px;
+    border: .5px solid gray;
 
 }
 .btn:hover{
@@ -62,6 +72,15 @@ li a:hover{
 }
 
 /* -----------page body style part---------------- */
+body{
+    background: url("https://t4.ftcdn.net/jpg/06/19/45/45/240_F_619454562_kogw7bIlI0AxT8sxmb1zQQqye0glpoXs.jpg");
+    width:100%;
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  
+}
 
 .bg-img{
    height:500px;
@@ -70,7 +89,6 @@ li a:hover{
 
 }
 .bg-img img{
-    /* background-image: fit; */
     height:470px;
     object-fit: fit;
     padding-left:300px;
@@ -91,11 +109,12 @@ li a:hover{
 }
 #signupform input{
     font-size: 20px;
-    border-radius: 5px;
-    width:85%;
+    width:50%;
     height:50px;
     padding:20px;
     margin:10px;
+    border:.3px solid black;
+    outline: none;
 }
 
 /* --loginpage------------- */
@@ -113,13 +132,14 @@ li a:hover{
     width:100%;
 
 }
- #loginform input{
+#loginform input{
     font-size: 20px;
-    border-radius: 5px;
-    width:85%;
+    width:50%;
     height:50px;
     padding:20px;
-    margin:10px; 
+    margin:10px;
+    border:.3px solid black;
+    outline: none;
 }
 
 /* --------shop-page--------------------
