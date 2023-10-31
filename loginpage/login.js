@@ -17,7 +17,6 @@ function checkCred(e){
 
    for (let i = 0; i < valid.length; i++) {
     if (valid[i].email === email.value && valid[i].password === password.value) {
-       // console.log("hello");
         let currentUser = valid[i];
         localStorage.setItem("currentUser", JSON.stringify(currentUser));
         window.location.href = "../shoppage/index.html";

@@ -54,11 +54,11 @@ let flag = true;
     user.push(details);
 
  
-     localStorage.setItem("user", JSON.stringify(user));
+    localStorage.setItem("user", JSON.stringify(user));
     console.log(user);
     alert("signup successful");
     window.location.href="../shoppage/index.html";
-}
+     }
 
 }
 }

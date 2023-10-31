@@ -85,18 +85,18 @@ function checklist(elem){
         <h3 class="tp" id="tpi-${elem.id}">${elem.price}</h3>
       </div>
     </div>
-
   </div>
     `
 };
 
 //--------------showing the checklist items ----
+
 function showchecklist(){
 
   let html1= getItems.map((items)=> checklist(items) )
   let checklistitems = document.querySelector(".checklist-items");
   checklistitems.innerHTML =html1.join("");
-  
+
 }
 showchecklist();
 
