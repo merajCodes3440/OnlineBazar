@@ -64,14 +64,12 @@ li img{
     font-size: 20px;
     border-radius: 5px;
     border: .5px solid gray;
-
 }
 .btn:hover{
     background-color: black;
     color:white;
    
 }
-
 .shopbody{
   padding:10px;
   display: flex;
@@ -93,12 +91,12 @@ li img{
 /* ------left-section---- */
 .shop-left-sec{
   width:19%;
-  height:100%;
+  min-height:100%;
   padding:10px;
   position:fixed;
   top:60px;
-  overflow-y:scroll;
-  
+  overflow-y:auto;
+  border-right: 8px solid rgb(134, 130, 130);
 }
 .shop-left-sec h3{
   text-align: center;
@@ -108,7 +106,6 @@ li img{
   margin-top:10px;
   border-top:.5px solid whitesmoke;
   margin-bottom:20px;
-  /* gap:10px; */
   display:flex;
   flex-direction: column;
   text-align: center;
@@ -139,9 +136,7 @@ li img{
   justify-content: space-around;
   
 }
-input:focus{
-  /* outline:none; */
-}
+
 #searchid{
   border-radius: 5px;
   border:.5px solid #E91E63;
@@ -153,11 +148,7 @@ input:focus{
   background-color:rgb(32, 32, 32) ;
   color:white;
 }
-/* .filter-btn-sec{
-  padding: 10px 30px;
-  display: flex;
-  justify-content: space-evenly;
-} */
+
 .filterbtn{
   height: 40px;
   width:150px;
@@ -240,3 +231,16 @@ h2 , p{
 }
 
 
+/* ------------------scrollbar modification file------------------- */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background:rgb(32, 32, 32); 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:gray; 
+}

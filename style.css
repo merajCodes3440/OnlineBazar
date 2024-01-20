@@ -158,9 +158,7 @@ body{
     outline: none;
 }
 
-/* --------shop-page--------------------
-.
-/* css for add to cart items count */
+/* --------shop-page-------css for add to cart items count */
 
 .cartqunt{
     background-color: red;
@@ -168,3 +166,5 @@ body{
     height: 20px;
     border-radius: 5px;
 }
+
+ 
