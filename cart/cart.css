@@ -67,9 +67,6 @@ li img{
     color:white;
    
 }
-.mainCont{
-
-}
 .items{
     display: flex;
     flex-wrap: wrap;
@@ -171,9 +168,12 @@ i{
 
 }
 .totalprice{
-    margin: 5px;
+    margin: 5px 0;
     display:flex;
     justify-content: space-between;
+    padding:10px;
+    background-color: #EFC07B;
+    color:black
 
 }
 .remove{
@@ -223,7 +223,7 @@ i{
   padding:10px;
   border-radius:5px;
   /* margin:10px 0; */
-  height:480px;
+  height:430px;
 
  }
  .cont img{

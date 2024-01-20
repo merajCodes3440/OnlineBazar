@@ -19,11 +19,11 @@ function checkCred(e){
     if (valid[i].email === email.value && valid[i].password === password.value) {
         let currentUser = valid[i];
         localStorage.setItem("currentUser", JSON.stringify(currentUser));
-        window.location.href = "../shoppage/index.html";
+        window.location.href="../paymentGateaway/payment.html"
         return;
     }
 }
-alert("Credentials do not match");
+alert("Credentials does not match");
 
 }
 

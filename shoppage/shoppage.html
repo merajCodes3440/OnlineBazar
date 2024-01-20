@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnlineBazar-shop-spage</title>
+    <!-- <link rel="stylesheet" href="../style.css" /> -->
+    <link rel="stylesheet" href="shoppage.css" />
+  </head>
+
+  <body>
+    <nav class="container">
+      <div class="logo">
+        <p>OnlineBazar.com</p>
+      </div>
+
+      <div class="right-section">
+        <ul>
+          <li><a href="../mainPage.html">Home</a></li>
+          <li class="cart-nav">
+            <a href="../cart/cart.html"
+              >My Cart <span class="cartqunt"></span
+            ></a>
+          </li>
+          <li><a href="../profile/profile.html">Profile</a></li>
+          <li>
+            <img
+              src="https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YSUyMG1hbnxlbnwwfHwwfHx8MA%3D%3D"
+              alt="use-img"
+            />
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-----------------shopbody-------------------->
+
+    <div class="shopbody">
+      <!-----------------left section-------------------->
+      <section class="shop-left-sec">
+        <!-- <h3>Color</h3> -->
+        <div class="checkbox-container">
+          <button class="filterbtn" id="btnall">All</button>
+          <button class="filterbtn" id="btnlaptops">Laptops</button>
+          <button class="filterbtn" id="btnphones">Smartphones</button>
+          <button class="filterbtn" id="btnfrag">Fragrances</button>
+          <button class="filterbtn" id="btngroc">Groceries</button>
+        </div>
+
+        <h3>SORT ITEM</h3>
+        <div class="checkbox-container">
+          <div class="check">
+            <input type="radio" id="s4" name="radio" />
+            <label for="s4">Min to Max</label>
+          </div>
+          <div class="check">
+            <input type="radio" id="s5" name="radio" />
+            <label for="s5">Max to Min</label>
+          </div>
+        </div>
+        <h3>FILTER BY PRICE RANGE</h3>
+        <div class="checkbox-container">
+          <div class="check">
+            <input type="checkbox" id="s9" />
+            <label for="s9">10$-200$</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="s10" />
+            <label for="s10">200$-500$</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="s11" />
+            <label for="s11">500$-1000$</label>
+          </div>
+        </div>
+      </section>
+
+      <!-------------------product display section---------->
+
+      <section class="shop-right-sec">
+        <!-------------------product filter section---------->
+
+        <div class="filter-sec">
+          <div class="search">
+            <input type="text" id="searchid" placeholder="search" />
+          </div>
+
+          <div class="filter-btn-sec"></div>
+        </div>
+        <div class="shopCont"></div>
+      </section>
+    </div>
+
+    <script src="shoppage.js"></script>
+  </body>
+</html>

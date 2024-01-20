@@ -5,15 +5,13 @@
     box-sizing: border-box;
 }
 body{
-   
     font-family: 'Roboto', sans-serif;
     overflow-x:hidden;
 }
 .logo p{
     padding:5px;
-    font-size: 30px;
-    font-weight: 500;
-   
+    font-size:30px;
+    font-weight: 500;  
 }
 .container{
     background-color:black;
@@ -33,14 +31,12 @@ ul li{
     font-weight: 500;
    font-size: 20px;
    list-style: none;
-   /* padding:0 5px; */
-  
 }
 li a{
    text-decoration: none;
    color:white;
    padding:16px 18px;
-   font-size: 18px;
+   font-size: 22px;
 }
 li a:hover{
     background-color: grey;
@@ -51,11 +47,12 @@ li img{
     height:50px;
     border-radius: 50%;
     border:.5px solid #E91E63;
+    cursor:pointer;
 }
-.body-section h1{
+/* .body-section h1{
     margin:20px;
     font-size: 24px;
-}
+} */
 .btn {
     margin:10px 20px;
     width:100px;
@@ -63,39 +60,60 @@ li img{
     font-size: 20px;
     border-radius: 5px;
     border: .5px solid gray;
-
 }
 .btn:hover{
     background-color: black;
     color:white;
+}
+.main-page{
+    color:rgb(36,65,74);
+    background-color: rgb(231,180,154);
+    width:500px;
+    padding:10px;
+    height:260px;
+    border-radius: 10px;
+
+}
+.main-heading{
+    margin-top:30px;
+    font-size:30px;
    
+}
+.sub-heading{
+    padding:30px 5px;
+    width:450px;
+    /* background-color: #E91E63; */
+}
+.main-btn{
+    width:110px;
+    height:42px;
+    font-size: 18px;
+    border-radius: 5px;
+    color:aliceblue;
+    background-color:#E91E63;
+    outline-style:outset;
+    border:1px solid black;
 }
 
 /* -----------page body style part---------------- */
 body{
-    background: url("https://t4.ftcdn.net/jpg/06/19/45/45/240_F_619454562_kogw7bIlI0AxT8sxmb1zQQqye0glpoXs.jpg");
+    background: url("https://media.istockphoto.com/id/1352707458/photo/latin-customer-buying-new-clothes.jpg?s=612x612&w=0&k=20&c=aMv6HOUumrm3V_TNgrVWXILTnumeImMTKt8Z4_Jq8dw=");
     width:100%;
     height:100vh;
     background-repeat: no-repeat;
     background-size: cover;
-
-  
 }
-
 .bg-img{
+   padding-top:200px;
    height:500px;
    width:1000px;
-   padding-left: 300px;
-
+   padding-left: 100px;
 }
 .bg-img img{
     height:470px;
     object-fit: fit;
-    padding-left:300px;
-    
+    padding-left:300px;  
 }
-
-
 /* signup page css code------------------------  */
 
 #signupform{
@@ -103,9 +121,7 @@ body{
     width:100%;
     display: flex;
     flex-direction: column;
-    align-items:center;
-
-    
+    align-items:center; 
 }
 #signupform input{
     font-size: 20px;
