@@ -8,5 +8,5 @@ document.getElementById("submit").addEventListener("click",()=>{
     let pincode =document.getElementById('pincode').value; 
     let landmark =document.getElementById('landmark').value; 
     let num =document.getElementById('num').value; 
-    alert("your form has submitted." ,fname)
+    alert("your form has been submitted." ,fname)
 })
